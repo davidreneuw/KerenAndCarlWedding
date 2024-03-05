@@ -31,6 +31,7 @@
 body,
 html {
     height: 100%;
+    overflow-x: auto;
 }
 
 a {
@@ -106,6 +107,12 @@ h1 {
 .kc-body-2 {
     font-size: 17px;
     line-height: 1.5;
+    font-weight: 400;
+}
+
+.kc-header-1 {
+    font-size: 40px;
+    line-height: 1;
     font-weight: 400;
 }
 
@@ -198,7 +205,6 @@ h1 {
     font-family: var(--navbar-font);
     display: flex;
     flex-direction: column;
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
@@ -287,13 +293,14 @@ h1 {
 .kc-rsvp-row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
 }
 
 .kc-rsvp-info {
     display: block;
-    min-width: 15%;
+    min-width: 300px;
     width: 20%;
     max-width: 30%;
     margin: 5% 5% 5% 5%;
@@ -343,8 +350,32 @@ h1 {
 }
 
 .kc-round-outline-btn:hover {
+    cursor: pointer;
     background-color: var(--rust);
     color: var(--creme);
+}
+
+.kc-rsvp-text {
+    width: 30%;
+    padding: 5% 10%;
+    min-width: 400px;
+}
+
+.kc-rsvp-photo-carousel {
+    width: 50%;
+    min-width: 400px;
+}
+
+.kc-rsvp-carousel-slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url("https://kcweddingassets.blob.core.windows.net/assets/About.jpg");
+    background-repeat: no-repeat;
+}
+
+.wrap {
+    text-wrap: wrap;
 }
 
 @media screen and (max-width: 1170px) {
