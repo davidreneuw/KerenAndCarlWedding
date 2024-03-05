@@ -10,7 +10,7 @@
 
     /* Hero */
     --hero-bg: var(--creme);
-    --hero-bg-picture: url("./assets/HeaderBackground.jpg");
+    --hero-bg-picture: url("https://kcweddingassets.blob.core.windows.net/assets/HeaderBackground.jpg");
     --hero-header-font: "Lora", serif;
 
     /* Navbar */
