@@ -20,7 +20,7 @@
   --navbar-bg: var(--terracotta);
   --navbar-text: rgba(255, 255, 255, 1);
   --navbar-font: "Lora", serif;
-  --navbar-logo: url("https://assets-global.website-files.com/62e8b531ae45605ec4341462/654867739326159aef7afd98_cd%20logo%20white.svg");
+  --navbar-logo: url("https://kcweddingassets.blob.core.windows.net/assets/logo-thick.png");
   --navlink-hover: var(--rust);
 }
 
@@ -34,7 +34,7 @@
 body,
 html {
   height: 100%;
-  overflow-x: auto;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -69,6 +69,10 @@ h1 {
 
 .white-color {
   color: var(--white);
+}
+
+.terracota-color {
+  color: var(--terracotta);
 }
 
 .creme-bg {
@@ -206,14 +210,11 @@ h1 {
 }
 
 .kc-zoom {
-  width: 80vw;
   flex-direction: column;
+  border-color: var(--creme);
   justify-content: center;
   display: flex;
   position: relative;
-  animation: scroll-in linear forwards;
-  animation-timeline: scroll();
-  animation-range: 0 300vh;
 }
 
 .kc-zoom-header {
@@ -222,7 +223,12 @@ h1 {
 }
 
 .kc-svg {
+  will-change: width;
+  width: 80vw;
+  min-width: 100%;
+  min-height: 100%;
   box-shadow: inset 0 0 0 4px var(--hero-bg), 0 0 0 70vh var(--hero-bg);
+  border-color: var(--creme);
 }
 
 .kc-hero-still-image {
@@ -410,6 +416,8 @@ h1 {
 .kc-rsvp-photo-carousel {
   width: 50%;
   min-width: 400px;
+  max-width: 100%;
+  min-height: 400px;
 }
 
 .kc-rsvp-carousel-slide {
@@ -447,6 +455,7 @@ h1 {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  height: 300px;
   min-width: 200px;
   width: 100%;
   max-width: 300px;
@@ -465,18 +474,12 @@ h1 {
   margin-bottom: 10px;
 }
 
-.kc-location {
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
 .kc-location-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 30px;
-  margin-right: 30px;
+  padding: 0 10%;
 }
 
 .kc-location-map {
@@ -491,13 +494,14 @@ h1 {
   flex-direction: column;
   align-items: center;
   min-width: 40%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   margin-top: 30px;
   margin-bottom: 30px;
-  padding-left: 5%;
 }
 
 .kc-location-info-text {
-  max-width: max-content;
+  max-width: 800px;
   text-wrap: wrap;
   margin-top: 5%;
 }
@@ -511,6 +515,114 @@ h1 {
   background-position-x: center;
   background-blend-mode: lighten;
   filter: blur(2px);
+}
+
+.kc-hotel {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 5%;
+}
+
+.kc-hotel-container {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 3% 3%;
+}
+
+.kc-hotel-header {
+  margin-bottom: 20px;
+}
+
+.kc-hotel-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.kc-hotel-img {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 800px;
+  max-height: 600px;
+  min-width: 200px;
+}
+
+.kc-hotel-image {
+  width: 100%;
+  max-width: 800px;
+  max-height: 600px;
+  min-width: 200px;
+}
+
+.kc-hotel-info {
+  padding-left: 5%;
+  max-width: 800px;
+  min-width: 200px;
+}
+
+.kc-qna {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.kc-qna-container {
+  border-radius: 20px 20px 0 0;
+  padding: 0 5%;
+  padding-bottom: 5%;
+}
+
+.kc-qna-header {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.kc-qna-collapsible {
+  cursor: pointer;
+}
+
+.kc-qna-collapsible:after {
+  content: "\f0d7"; /* Unicode character for "plus" sign (+) */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 16px;
+  color: var(--rust);
+  float: right;
+}
+
+.kc-qna-collapsible.active:after {
+  content: "\f0d8"; /* Unicode character for "minus" sign (-) */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 16px;
+  color: var(--rust);
+  float: right;
+}
+
+.kc-qna-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.kc-footer-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.kc-footer-logo-img {
+  width: 100px;
+  height: 100px;
+}
+
+.kc-footer-info {
+  margin-left: 5%;
 }
 
 @media screen and (max-width: 1170px) {
@@ -552,20 +664,44 @@ h1 {
   }
 }
 
+@media screen and (max-width: 1350px) {
+  .kc-rsvp-photo-carousel {
+    width: 50%;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 400px;
+  }
+}
+
 @media screen and (max-width: 1140px) {
   .kc-schedule-row {
     flex-direction: column;
     align-items: center;
   }
-}
 
-@keyframes scroll-in {
-  0% {
-    width: 80vw;
+  .kc-hotel-row {
+    flex-direction: column;
+    align-items: center;
   }
 
-  100% {
-    width: 200vw;
+  .kc-hotel-info {
+    padding-left: 0;
+  }
+
+  .kc-hotel-container {
+    padding: 5% 8%;
+  }
+
+  .kc-hotel-image {
+    margin-bottom: 20px;
+  }
+
+  .kc-qna {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 
@@ -583,5 +719,23 @@ h1 {
   100% {
     color: var(--rust);
     transform: translateY(0);
+  }
+}
+
+@keyframes scroll-hero {
+  0% {
+    width: 80vw;
+  }
+  25% {
+    width: 200vw;
+  }
+  50% {
+    width: 320vw;
+  }
+  75% {
+    width: 440vw;
+  }
+  100% {
+    width: 560vw;
   }
 }

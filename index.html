@@ -1,202 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="David René, davrene11@gmail.com">
-    <meta name="description" content="Keren and Carl's wedding website">
-    <meta name="keywords" content="Keren, Delos, Stantos, Carl, wedding, website, marriage, love, celebration">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="David René, davrene11@gmail.com" />
+    <meta name="description" content="Keren and Carl's wedding website" />
+    <meta
+      name="keywords"
+      content="Keren, Delos, Stantos, Carl, wedding, website, marriage, love, celebration"
+    />
+    <link
+      rel="icon"
+      href="https://kcweddingassets.blob.core.windows.net/assets/logo-thick.png"
+      type="image/x-icon"
+    />
     <title>Keren and Carl - 2024</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/ceede317c5.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ceede317c5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2ElRhxyk8jt1sAWXf5-WToVdFR8McwCY&callback=initMap&libraries=&v=weekly"
       defer
     ></script>
     <script src="./index.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <section id="top-of-page" class="kc-ocean">
-        <div class="kc-sticky-div">
-            <div class="kc-content-wrap">
-                <div class="kc-zoom">
-                    <img src="https://kcweddingassets.blob.core.windows.net/assets/KerenCarlMask.svg" loading="lazy" alt
-                        class="kc-svg" />
-                    <div class="kc-zoom-header lora-serif fern-color">
-                        <h1 class="kc-header-text">Save the date - Sunday, October 20, 2024</h1>
-                        <h1 class="kc-header-text-2">Scroll down</h1>
-                        <a href="#kc-about" class="kc-scroll-down-arrow"> <i
-                                class="fa-sharp fa-solid fa-arrow-down fa-2xl"></i></a>
-                    </div>
-                </div>
+      <div class="kc-sticky-div">
+        <div class="kc-content-wrap">
+          <div class="kc-zoom" id="image-container">
+            <img
+              src="https://kcweddingassets.blob.core.windows.net/assets/KerenCarlMask.svg"
+              loading="lazy"
+              alt
+              class="kc-svg"
+              id="hero-image"
+            />
+            <div class="kc-zoom-header lora-serif fern-color">
+              <h1 class="kc-header-text">
+                Save the date - Sunday, October 20, 2024
+              </h1>
+              <h1 class="kc-header-text-2">Scroll down</h1>
+              <a href="#kc-about" class="kc-scroll-down-arrow">
+                <i class="fa-sharp fa-solid fa-arrow-down fa-2xl"></i
+              ></a>
             </div>
-            <div class="kc-hero-still-image"></div>
+          </div>
         </div>
+        <div class="kc-hero-still-image"></div>
+      </div>
     </section>
     <div class="kc-navbar">
-        <div class="kc-navbar-container">
-            <a class="kc-logo-div">
-                <div class="kc-logo"></div>
-            </a>
-            <nav role="navigation" class="kc-nav-menu">
-                <a href="#kc-rsvp" class="kc-navlink lora-sans-serif">RSVP</a>
-                <a href="#kc-about" class="kc-navlink lora-sans-serif">About</a>
-                <a href="#kc-schedule" class="kc-navlink lora-sans-serif">Schedule</a>
-                <a href="#kc-location" class="kc-navlink lora-sans-serif">Location/Parking</a>
-                <a href="#kc-hotel" class="kc-navlink lora-sans-serif">Hotel</a>
-                <a href="#kc-us" class="kc-navlink lora-sans-serif">How we met</a>
-                <a href="#kc-photos" class="kc-navlink lora-sans-serif">Engagement photos</a>
-                <a href="#kc-qna" class="kc-navlink lora-sans-serif">Q&A</a>
-            </nav>
-            <a class="kc-hamburger" href="javascript:void(0)" onclick="toggleNav()"></a>
-        </div>
-        <div class="kc-small-nav-menu" id="nav">
-            <a href="#kc-rsvp" class="kc-mobile-navlink" onclick="closeNav()">RSVP</a>
-            <a href="#kc-about" class="kc-mobile-navlink" onclick="closeNav()">About</a>
-            <a href="#kc-schedule" class="kc-mobile-navlink" onclick="closeNav()">Schedule</a>
-            <a href="#kc-location" class="kc-mobile-navlink" onclick="closeNav()">Location/Parking</a>
-            <a href="#kc-hotel" class="kc-mobile-navlink" onclick="closeNav()">Hotel</a>
-            <a href="#kc-us" class="kc-mobile-navlink" onclick="closeNav()">How we met</a>
-            <a href="#kc-photos" class="kc-mobile-navlink" onclick="closeNav()">Engagement photos</a>
-            <a href="#kc-qna" class="kc-mobile-navlink" onclick="closeNav()">Q&A</a>
-        </div>
+      <div class="kc-navbar-container">
+        <a class="kc-logo-div">
+          <div class="kc-logo"></div>
+        </a>
+        <nav role="navigation" class="kc-nav-menu">
+          <a
+            href="https://withjoy.com/keren-and-carl-2024"
+            target="_blank"
+            class="kc-navlink lora-sans-serif"
+            >RSVP</a
+          >
+          <a href="#kc-about" class="kc-navlink lora-sans-serif">About</a>
+          <a href="#kc-schedule" class="kc-navlink lora-sans-serif">Schedule</a>
+          <a href="#kc-location" class="kc-navlink lora-sans-serif"
+            >Location/Parking</a
+          >
+          <a href="#kc-hotel" class="kc-navlink lora-sans-serif">Hotel</a>
+          <a href="#kc-us" class="kc-navlink lora-sans-serif">How we met</a>
+          <a href="#kc-photos" class="kc-navlink lora-sans-serif"
+            >Engagement photos</a
+          >
+          <a href="#kc-qna" class="kc-navlink lora-sans-serif">Q&A</a>
+        </nav>
+        <a
+          class="kc-hamburger"
+          href="javascript:void(0)"
+          onclick="toggleNav()"
+        ></a>
+      </div>
+      <div class="kc-small-nav-menu" id="nav">
+        <a
+          href="https://withjoy.com/keren-and-carl-2024"
+          class="kc-mobile-navlink"
+          onclick="closeNav()"
+          >RSVP</a
+        >
+        <a href="#kc-about" class="kc-mobile-navlink" onclick="closeNav()"
+          >About</a
+        >
+        <a href="#kc-schedule" class="kc-mobile-navlink" onclick="closeNav()"
+          >Schedule</a
+        >
+        <a href="#kc-location" class="kc-mobile-navlink" onclick="closeNav()"
+          >Location/Parking</a
+        >
+        <a href="#kc-hotel" class="kc-mobile-navlink" onclick="closeNav()"
+          >Hotel</a
+        >
+        <a href="#kc-us" class="kc-mobile-navlink" onclick="closeNav()"
+          >How we met</a
+        >
+        <a href="#kc-photos" class="kc-mobile-navlink" onclick="closeNav()"
+          >Engagement photos</a
+        >
+        <a href="#kc-qna" class="kc-mobile-navlink" onclick="closeNav()">Q&A</a>
+      </div>
     </div>
     <section id="kc-about">
-        <div class="kc-rsvp-row white-bg">
-            <div class="kc-rsvp-text rust-color">
-                <h1 class="lora-sans-serif kc-header-1" style="margin-bottom:30px;">Come celebrate with us on our big
-                    day</h1>
-                <p class="lora-sans-serif wrap kc-body-1" style="margin-bottom: 30px;">You’re invited to both our
-                    wedding and reception on October 20th, 2024 at the Whistle Bear Golf Club for a night of
-                    celebration, tears, food, fun, and games at our wedding!</p>
-                <p class="lora-sans-serif wrap kc-body-2" style="margin-bottom: 30px;">Please let us know if you can
-                    attend through our RSVP link below asap!</p>
-                <p class="lora-sans-serif kc-body-2" style="margin-bottom: 30px;">RSVP deadline: July 12, 2024</p>
-                <div class="kc-rsvp-buttons">
-                    <a class="kc-round-outline-btn lora-sans-serif">RSVP</a>
-                    <a class="kc-round-outline-btn lora-sans-serif">Q & A</a>
-                </div>
-            </div>
-            <div class="kc-rsvp-photo-carousel">
-                <div class="kc-rsvp-carousel-slide">
-                </div>
-            </div>
+      <div class="kc-rsvp-row white-bg">
+        <div class="kc-rsvp-text rust-color">
+          <h1 class="lora-sans-serif kc-header-1" style="margin-bottom: 30px">
+            Come celebrate with us on our big day
+          </h1>
+          <p class="lora-sans-serif wrap kc-body-1" style="margin-bottom: 30px">
+            You’re invited to both our wedding and reception on October 20th,
+            2024 at the Whistle Bear Golf Club for a night of celebration,
+            tears, food, fun, and games at our wedding!
+          </p>
+          <p class="lora-sans-serif wrap kc-body-2" style="margin-bottom: 30px">
+            Please let us know if you can attend through our RSVP link below
+            asap!
+          </p>
+          <p class="lora-sans-serif kc-body-2" style="margin-bottom: 30px">
+            RSVP deadline: July 12, 2024
+          </p>
+          <div class="kc-rsvp-buttons">
+            <a
+              href="https://withjoy.com/keren-and-carl-2024"
+              target="_blank"
+              class="kc-round-outline-btn lora-sans-serif terracota-color"
+              >RSVP</a
+            >
+            <a
+              href="#kc-qna"
+              class="kc-round-outline-btn lora-sans-serif terracota-color"
+              >Q & A</a
+            >
+          </div>
         </div>
-        <div class="kc-rsvp-row creme-bg">
-            <div class="kc-rsvp-info lora-sans-serif">
-                <h1 class="lora-sans-serif">
-                    Date & Time
-                    <i class="fa-regular fa-calendar"></i>
-                </h1>
-                <hr class="kc-hr">
-                </hr>
-                <p class="rust-color lora-sans-serif kc-body-1 kc-bold">
-                    Sunday, October 20, 2024
-                </p>
-                <p class="rust-color lora-sans-serif kc-body-2" style="margin-top: 10px;">
-                    5:00 PM EST
-                </p>
-            </div>
-            <div class="kc-rsvp-info">
-                <h1 class="lora-sans-serif">
-                    Location
-                    <i class="fa-regular fa-map"></i>
-                </h1>
-                <hr class="kc-hr">
-                <a href="https://whistlebear.ca/" class="rust-color lora-sans-serif kc-body-1 kc-bold">Whistle Bear Golf
-                    Club</a>
-                <p class="rust-color lora-sans-serif kc-body-2" style="margin-top: 10px; margin-bottom: 25px;">1316
-                    Dickie Settlement Rd, Cambridge, ON N3H 4R8</p>
-                <a href="#kc-location" class="rust-color lora-sans-serif kc-body-2 kc-round-outline-btn"> View location
-                    details</a>
-            </div>
-            <div class="kc-rsvp-info">
-                <h1 class="lora-sans-serif">
-                    Contact
-                    <i class="fa-regular fa-id-card"></i>
-                </h1>
-                <hr class="kc-hr">
-                <div class="kc-contact">
-                    <p class="rust-color lora-sans-serif kc-body-1 kc-bold">Keren Delos Santos</p>
-                    <p class="rust-color lora-sans-serif kc-body-2" style="margin-top: 10px">
-                        keren.delos.santos@hotmail.com</p>
-                    <p class="rust-color lora-sans-serif kc-body-2">647 871 3567</p>
-                    <p class="rust-color lora-sans-serif kc-body-1 kc-bold" style="margin-top: 15px;">Carl Lucasan</p>
-                    <p class="rust-color lora-sans-serif kc-body-2" style="margin-top: 10px">carllucasan23@gmail.com</p>
-                    <p class="rust-color lora-sans-serif kc-body-2">647 980 7656</p>
-                </div>
-            </div>
+        <div class="kc-rsvp-photo-carousel">
+          <div class="kc-rsvp-carousel-slide"></div>
         </div>
+      </div>
+      <div class="kc-rsvp-row creme-bg">
+        <div class="kc-rsvp-info lora-sans-serif">
+          <h1 class="lora-sans-serif">
+            Date & Time
+            <i class="fa-regular fa-calendar"></i>
+          </h1>
+          <hr class="kc-hr" />
+          <p class="rust-color lora-sans-serif kc-body-1 kc-bold">
+            Sunday, October 20, 2024
+          </p>
+          <p
+            class="rust-color lora-sans-serif kc-body-2"
+            style="margin-top: 10px"
+          >
+            5:00 PM EST
+          </p>
+        </div>
+        <div class="kc-rsvp-info">
+          <h1 class="lora-sans-serif">
+            Location
+            <i class="fa-regular fa-map"></i>
+          </h1>
+          <hr class="kc-hr" />
+          <a
+            href="https://whistlebear.ca/"
+            class="rust-color lora-sans-serif kc-body-1 kc-bold"
+            >Whistle Bear Golf Club</a
+          >
+          <p
+            class="rust-color lora-sans-serif kc-body-2"
+            style="margin-top: 10px; margin-bottom: 25px"
+          >
+            1316 Dickie Settlement Rd, Cambridge, ON N3H 4R8
+          </p>
+          <a
+            href="#kc-location"
+            class="rust-color lora-sans-serif kc-body-2 kc-round-outline-btn"
+          >
+            View location details</a
+          >
+        </div>
+        <div class="kc-rsvp-info">
+          <h1 class="lora-sans-serif">
+            Contact
+            <i class="fa-regular fa-id-card"></i>
+          </h1>
+          <hr class="kc-hr" />
+          <div class="kc-contact">
+            <p class="rust-color lora-sans-serif kc-body-1 kc-bold">
+              Keren Delos Santos
+            </p>
+            <p
+              class="rust-color lora-sans-serif kc-body-2"
+              style="margin-top: 10px"
+            >
+              keren.delos.santos@hotmail.com
+            </p>
+            <p class="rust-color lora-sans-serif kc-body-2">647 871 3567</p>
+            <p
+              class="rust-color lora-sans-serif kc-body-1 kc-bold"
+              style="margin-top: 15px"
+            >
+              Carl Lucasan
+            </p>
+            <p
+              class="rust-color lora-sans-serif kc-body-2"
+              style="margin-top: 10px"
+            >
+              carllucasan23@gmail.com
+            </p>
+            <p class="rust-color lora-sans-serif kc-body-2">647 980 7656</p>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="kc-schedule">
-        <div class="white-bg kc-schedule">
-            <h1 class="lora-sans-serif kc-header-1 rust-color kc-schedule-header">Schedule</h1>
-            <div class="kc-schedule-row">
-                <div class="kc-schedule-info light-rust-bg">
-                    <h1 class="lora-sans-serif kc-body-1 white-color kc-bold kc-schedule-info-header">
-                        Arrival
-                        <i class="fa-solid fa-car"></i>
-                    </h1>
-                    <hr class="kc-hr-white">
-                    <p class="lora-sans-serif kc-body-1 white-color">5:00PM - 5:30 PM</p>
-                    <p class="lora-sans-serif kc-body-2 white-color">Whistle Bear Golf Club</p>
-                </div>
-                <div class="kc-schedule-info light-terracota-bg">
-                    <h1 class="lora-sans-serif kc-body-1 white-color kc-bold kc-schedule-info-header">
-                        Ceremony
-                        <i class="fa-regular fa-heart"></i>
-                    </h1>
-                    <hr class="kc-hr-white">
-                    <p class="lora-sans-serif kc-body-1 white-color">5:30 PM - 6:00 PM</p>
-                    <p class="lora-sans-serif kc-body-2 white-color">Garden Chapel @ Whistle Bear Golf Club</p>
-                </div>
-                <div class="kc-schedule-info light-fern-bg">
-                    <h1 class="lora-sans-serif kc-body-1 white-color kc-bold kc-schedule-info-header">
-                        Cocktail Hour
-                        <i class="fa-solid fa-martini-glass"></i>
-                    </h1>
-                    <hr class="kc-hr-white">
-                    <p class="lora-sans-serif kc-body-1 white-color">6:00 PM - 7:00 PM</p>
-                    <p class="lora-sans-serif kc-body-2 white-color">Whistle Bear Golf Club</p>
-                </div>
-                <div class="kc-schedule-info sage-bg">
-                    <h1 class="lora-sans-serif kc-body-1 white-color kc-bold kc-schedule-info-header">
-                        Reception
-                        <i class="fa-solid fa-utensils"></i>
-                    </h1>
-                    <hr class="kc-hr-white">
-                    <p class="lora-sans-serif kc-body-1 white-color">7:00 PM - 12:30 AM</p>
-                    <p class="lora-sans-serif kc-body-2 white-color">Dinner, Drinks, Dancing</p>
-                    <p class="lora-sans-serif kc-body-2 white-color">
-                        The Forestview Room and Terrace @ Whistle Bear Golf Club
-                    </p>
-                </div>
-            </div>
+      <div class="white-bg kc-schedule">
+        <h1 class="lora-sans-serif kc-header-1 rust-color kc-schedule-header">
+          Schedule
+        </h1>
+        <div class="kc-schedule-row">
+          <div class="kc-schedule-info light-rust-bg">
+            <h1
+              class="lora-sans-serif kc-body-1 white-color kc-bold kc-schedule-info-header"
+            >
+              Arrival
+              <i class="fa-solid fa-car"></i>
+            </h1>
+            <hr class="kc-hr-white" />
+            <p class="lora-sans-serif kc-body-1 white-color">
+              5:00PM - 5:30 PM
+            </p>
+            <p class="lora-sans-serif kc-body-2 white-color">
+              Whistle Bear Golf Club
+            </p>
+          </div>
+          <div class="kc-schedule-info light-terracota-bg">
+            <h1
+              class="lora-sans-serif kc-body-1 white-color kc-bold kc-schedule-info-header"
+            >
+              Ceremony
+              <i class="fa-regular fa-heart"></i>
+            </h1>
+            <hr class="kc-hr-white" />
+            <p class="lora-sans-serif kc-body-1 white-color">
+              5:30 PM - 6:00 PM
+            </p>
+            <p class="lora-sans-serif kc-body-2 white-color">
+              Garden Chapel @ Whistle Bear Golf Club
+            </p>
+          </div>
+          <div class="kc-schedule-info light-fern-bg">
+            <h1
+              class="lora-sans-serif kc-body-1 white-color kc-bold kc-schedule-info-header"
+            >
+              Cocktail Hour
+              <i class="fa-solid fa-martini-glass"></i>
+            </h1>
+            <hr class="kc-hr-white" />
+            <p class="lora-sans-serif kc-body-1 white-color">
+              6:00 PM - 7:00 PM
+            </p>
+            <p class="lora-sans-serif kc-body-2 white-color">
+              Whistle Bear Golf Club
+            </p>
+          </div>
+          <div class="kc-schedule-info sage-bg">
+            <h1
+              class="lora-sans-serif kc-body-1 white-color kc-bold kc-schedule-info-header"
+            >
+              Reception
+              <i class="fa-solid fa-utensils"></i>
+            </h1>
+            <hr class="kc-hr-white" />
+            <p class="lora-sans-serif kc-body-1 white-color">
+              7:00 PM - 12:30 AM
+            </p>
+            <p class="lora-sans-serif kc-body-2 white-color">
+              Dinner, Drinks, Dancing
+            </p>
+            <p class="lora-sans-serif kc-body-2 white-color">
+              The Forestview Room and Terrace @ Whistle Bear Golf Club
+            </p>
+            <p class="lora-sans-serif kc-body-2 white-color">
+              Prosperity dance (Sabitan ng Pera)
+            </p>
+          </div>
         </div>
+      </div>
     </section>
-    <section id="kc-location" class="kc-location fern-bg">
-        <div class="kc-location-row">
-            <div id="map" class="kc-location-map"></div>
-            <div class="kc-location-info">
-                <a href="https://whistlebear.ca/" class="kc-location-info-header lora-sans-serif white-color kc-header-1 kc-bold">Join us at the Whistlebear Golf Club</a>
-                <div class="lora-sans-serif kc-body-1 white-color">1316 Dickie Settlement Rd, Cambridge, ON N3H 4R8, Canada</div>
-                <div class="lora-sans-serif white-color kc-body-2 kc-location-info-text">The regions most breathtaking destination. With a modern rustic interior and surrounded by expansive farmland and forest, we hope that you will enjoy this location.</div>
-            </div>
+    <section id="kc-location" class="kc-location">
+      <div id="map" class="kc-location-map"></div>
+      <div class="kc-location-row fern-bg">
+        <div class="kc-location-info">
+          <a
+            href="https://whistlebear.ca/"
+            target="_blank"
+            class="kc-location-info-header lora-sans-serif white-color kc-header-1"
+            >Join us at the Whistlebear Golf Club</a
+          >
+          <a
+            class="lora-sans-serif kc-body-1 white-color"
+            href="https://maps.app.goo.gl/UXdU423dMycqaKbg8"
+            target="_blank"
+            >1316 Dickie Settlement Rd, Cambridge, ON N3H 4R8, Canada</a
+          >
+          <div
+            class="lora-sans-serif white-color kc-body-2 kc-location-info-text"
+          >
+            The regions most breathtaking destination. With a modern rustic
+            interior and surrounded by expansive farmland and forest, we hope
+            that you will enjoy this location. Parking is available for our
+            guests at the venue, free of charge.
+          </div>
         </div>
-        <div class="kc-location-row kc-location-picture"></div>
+      </div>
+      <div class="kc-location-row kc-location-picture"></div>
     </section>
-    <section>hotel</section>
-    <section>how we met</section>
+    <section id="kc-hotel" class="kc-hotel">
+      <div class="kc-hotel-container sage-bg">
+        <div class="kc-hotel-header lora-sans-serif kc-header-1 white-color">
+          Where to stay
+        </div>
+        <div class="kc-hotel-row">
+          <div class="kc-hotel-image">
+            <img
+              src="https://www.cambridgehotel.ca/wp-content/uploads/2022/05/banner-slider-img1.jpg"
+              class="kc-hotel-img"
+            />
+          </div>
+          <div class="kc-hotel-info">
+            <a
+              class="lora-sans-serif kc-header-1 white-color"
+              href="https://www.cambridgehotel.ca/"
+              >Cambridge Hotel and Conference Centre</a
+            >
+            <br />
+            <a
+              class="lora-sans-serif kc-body-1 white-color"
+              href="https://maps.app.goo.gl/ufVSwMYFyHZQx7dG7"
+              >700 Hespeler Rd, Cambridge, ON N3H 5L8 - 8 minute drive to
+              venue</a
+            >
+            <hr class="kc-hr-white" />
+            <p class="lora-sans-serif kc-body-2 white-color">
+              Reserve with a discounted rate by calling 519 622 1505 or emailing
+              reservations@cambridgehotel.ca under the Delos Santos & Lucasan
+              Wedding block. Make sure you receive a booking confirmation, phone
+              reservations are booked instantly.
+            </p>
+            <br />
+            <p class="lora-sans-serif white-color kc-body-2">
+              There are a limited number of discounted rooms and are reserved on
+              a first come, first serve basis. Please book at your earliest
+              convenience, and by August 19, 2024 to receive the discounted
+              rate.
+            </p>
+            <br />
+            <p class="lora-sans-serif white-color kc-body-2">
+              There will be a complimentary shuttle to the hotel before the
+              ceremony and after the reception, with breakfast included
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="kc-us">how we met</section>
     <section>through the years</section>
-    <section>engagement photos</section>
-    <section>Q&A</section>
-</body>
+    <section id="kc-photos">engagement photos</section>
+    <section id="kc-qna" class="kc-qna">
+      <div class="kc-qna-container creme-bg">
+        <div class="kc-qna-header lora-sans-serif kc-header-1 rust-color">
+          Q & A
+        </div>
+        <div class="kc-qna-collapsible lora-sans-serif kc-body-1 rust-color">
+          Wedding gifts
+        </div>
+        <div class="kc-qna-content lora-sans-serif kc-body-2 rust-color">
+          <p>
+            Although we will not be creating a wedding registry, there will be a
+            card box at the reception for monetary gifts. We are also accepting
+            e-transfers to [email] to kickstart our future together!
+          </p>
+        </div>
+        <hr class="kc-hr" />
+        <div class="kc-qna-collapsible lora-sans-serif kc-body-1 rust-color">
+          Dress code
+        </div>
+        <div class="kc-qna-content lora-sans-serif kc-body-2 rust-color">
+          <p>
+            Although we will not be creating a wedding registry, there will be a
+            card box at the reception for monetary gifts. We are also accepting
+            e-transfers to [email] to kickstart our future together!
+          </p>
+        </div>
+        <hr class="kc-hr" />
+      </div>
+    </section>
+    <section id="kc-footer" class="terracota-bg">
+      <div class="kc-footer-row">
+        <div class="kc-footer-logo">
+          <img
+            src="https://kcweddingassets.blob.core.windows.net/assets/logo-thick.png"
+            class="kc-footer-logo-img"
+          />
+        </div>
+        <div class="kc-footer-info">
+          <div class="lora-sans-serif kc-body-1 white-color">
+            Made by Seanthel Delos Santos & David René - 2024
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      var coll = document.getElementsByClassName("kc-qna-collapsible");
+      var i;
 
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+  </body>
 </html>

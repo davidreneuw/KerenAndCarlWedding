@@ -22,7 +22,6 @@ function initMap() {
   var marker = new google.maps.Marker({
     position: { lat: 43.3694038, lng: -80.3990211 },
     title: "Whistlebear Golf Club",
-    icon: "https://kcweddingassets.blob.core.windows.net/assets/heart-solid.svg",
   });
   marker.setMap(map);
 }
