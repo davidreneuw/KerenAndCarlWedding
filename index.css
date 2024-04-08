@@ -35,6 +35,7 @@ body,
 html {
   height: 100%;
   overflow-x: hidden;
+  scroll-timeline: --page-scroll block;
   scroll-behavior: smooth;
 }
 
@@ -71,7 +72,7 @@ h1 {
   color: var(--white);
 }
 
-.terracota-color {
+.terracotta-color {
   color: var(--terracotta);
 }
 
@@ -116,12 +117,12 @@ h1 {
   z-index: 0;
 }
 
-.terracota-bg {
+.terracotta-bg {
   background-color: var(--terracotta);
   z-index: 0;
 }
 
-.light-terracota-bg {
+.light-terracotta-bg {
   background-color: var(--light-terracotta);
   z-index: 0;
 }
@@ -160,6 +161,10 @@ h1 {
 
 .kc-bold {
   font-weight: bold;
+}
+
+.kc-italic {
+  font-style: italic;
 }
 
 /* Class styles */
@@ -210,11 +215,15 @@ h1 {
 }
 
 .kc-zoom {
+  width: 100%;
   flex-direction: column;
   border-color: var(--creme);
   justify-content: center;
   display: flex;
   position: relative;
+  animation: scroll-hero auto linear;
+  animation-timeline: --page-scroll;
+  animation-range: 0vh 300vh;
 }
 
 .kc-zoom-header {
@@ -222,13 +231,18 @@ h1 {
   flex-direction: column;
 }
 
+.kc-svg-container {
+  padding-bottom: 10px;
+}
+
 .kc-svg {
-  will-change: width;
-  width: 80vw;
+  width: 60vw;
+  height: 100%;
   min-width: 100%;
   min-height: 100%;
   box-shadow: inset 0 0 0 4px var(--hero-bg), 0 0 0 70vh var(--hero-bg);
   border-color: var(--creme);
+  border-style: none;
 }
 
 .kc-hero-still-image {
@@ -278,6 +292,10 @@ h1 {
   padding-bottom: 0;
 }
 
+.kc-nav-menu {
+  min-height: 100%;
+}
+
 .kc-navlink,
 .kc-nav-menu {
   background-color: var(--navbar-bg);
@@ -287,7 +305,7 @@ h1 {
   color: var(--navbar-text);
   text-transform: none;
   margin: 0;
-  padding: 18px;
+  padding: 20px 18px 18px 18px;
   font-family: var(--navbar-font);
   text-decoration: none;
   font-size: 14px;
@@ -295,12 +313,6 @@ h1 {
 
 .kc-navlink:hover {
   background-color: var(--navlink-hover);
-  border-top-width: 1px;
-  border-top-color: #000;
-  border-left-width: 1px;
-  border-left-color: #000;
-  border-right-width: 1px;
-  border-right-color: #000;
 }
 
 .kc-hamburger {
@@ -349,6 +361,9 @@ h1 {
   width: 20%;
   max-width: 30%;
   margin: 5% 5% 5% 5%;
+  animation: appear-from-bottom 1s forwards;
+  animation-timeline: --page-scroll;
+  animation-range: 200vh 350vh;
 }
 
 .kc-rsvp-info h1 {
@@ -411,6 +426,9 @@ h1 {
   width: 30%;
   padding: 5% 10%;
   min-width: 400px;
+  animation: appear-from-left 1s forwards;
+  animation-timeline: --page-scroll;
+  animation-range: 200vh 305vh;
 }
 
 .kc-rsvp-photo-carousel {
@@ -418,6 +436,9 @@ h1 {
   min-width: 400px;
   max-width: 100%;
   min-height: 400px;
+  animation: appear-from-right 1s forwards;
+  animation-timeline: --page-scroll;
+  animation-range: 200vh 305vh;
 }
 
 .kc-rsvp-carousel-slide {
@@ -451,15 +472,18 @@ h1 {
 }
 
 .kc-schedule-info {
-  border-radius: 20px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   padding: 20px;
-  height: 300px;
+  height: 450px;
   min-width: 200px;
   width: 100%;
   max-width: 300px;
   margin: 2% 1% 1% 0%;
+  animation: fade-in 1s forwards;
+  animation-timeline: --page-scroll;
+  animation-range: 250vh 500vh;
 }
 
 .kc-schedule-info-header {
@@ -485,8 +509,11 @@ h1 {
 .kc-location-map {
   min-width: 100%;
   max-width: 100%;
-  min-height: 200px;
+  min-height: 220px;
   max-height: 100%;
+  animation: appear-from-right 1s forwards;
+  animation-timeline: --page-scroll;
+  animation-range: 380vh 480vh;
 }
 
 .kc-location-info {
@@ -498,6 +525,9 @@ h1 {
   padding-bottom: 5%;
   margin-top: 30px;
   margin-bottom: 30px;
+  animation: fade-in 1s forwards;
+  animation-timeline: --page-scroll;
+  animation-range: 420vh 500vh;
 }
 
 .kc-location-info-text {
@@ -509,12 +539,14 @@ h1 {
 .kc-location-picture {
   height: 300px;
   max-height: 300px;
-  background-image: url("https://whistlebear.ca/wp-content/uploads/sites/10/2024/03/20190922-613.jpg");
+  background-image: url("https://pearleweddings.ca/wp-content/uploads/sites/3/2021/12/ReceptionDecor-97.jpg");
   background-size: cover;
   background-position-y: 70%;
   background-position-x: center;
   background-blend-mode: lighten;
-  filter: blur(2px);
+  animation: appear-from-left 1s forwards;
+  animation-timeline: --page-scroll;
+  animation-range: 400vh 500vh;
 }
 
 .kc-hotel {
@@ -524,10 +556,13 @@ h1 {
 }
 
 .kc-hotel-container {
-  border-radius: 20px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   padding: 3% 3%;
+  animation: appear-from-bottom 1s forwards;
+  animation-timeline: --page-scroll;
+  animation-range: 450vh 550vh;
 }
 
 .kc-hotel-header {
@@ -541,7 +576,7 @@ h1 {
 }
 
 .kc-hotel-img {
-  border-radius: 20px;
+  border-radius: 8px;
   width: 100%;
   max-width: 800px;
   max-height: 600px;
@@ -569,14 +604,14 @@ h1 {
 .kc-us-container {
   width: 85vw;
   height: 400px;
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 8px 8px 0;
 }
 
 .kc-now-container {
   margin-left: auto;
   width: 85vw;
   height: 400px;
-  border-radius: 20px 0 0 20px;
+  border-radius: 8px 0 0 8px;
 }
 
 .kc-photos-creme-container {
@@ -585,17 +620,45 @@ h1 {
   justify-content: center;
 }
 
-.kc-photos-light-terracota-container {
+.kc-photos-light-terracotta-container {
   width: 95vw;
   display: flex;
   justify-content: center;
 }
 
-.kc-photos-terracota-container {
+.kc-photos-terracotta-container {
   width: 90vw;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   height: 300px;
+}
+
+.kc-photos-header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.kc-photos-info {
+  text-align: center;
+}
+
+.kc-photos-placeholders-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.kc-photos-placeholder {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
 }
 
 .kc-qna {
@@ -608,7 +671,7 @@ h1 {
 }
 
 .kc-qna-container {
-  border-radius: 20px 20px 0 0;
+  border-radius: 8px 8px 0 0;
   padding: 0 5%;
   padding-bottom: 5%;
 }
@@ -643,6 +706,7 @@ h1 {
 
 .kc-qna-content {
   max-height: 0;
+  padding-top: 10px;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
@@ -655,8 +719,8 @@ h1 {
 }
 
 .kc-footer-logo-img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 
 .kc-footer-info {
@@ -762,18 +826,63 @@ h1 {
 
 @keyframes scroll-hero {
   0% {
-    width: 80vw;
+    opacity: 1;
+    width: 60vw;
   }
   25% {
-    width: 200vw;
+    width: 260vw;
   }
   50% {
-    width: 320vw;
+    width: 460vw;
   }
   75% {
-    width: 440vw;
+    width: 660vw;
+    opacity: 0;
   }
   100% {
-    width: 560vw;
+    width: 860vw;
+    opacity: 0;
+  }
+}
+
+@keyframes appear-from-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes appear-from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes appear-from-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
