@@ -13,7 +13,7 @@
 
   /* Hero */
   --hero-bg: var(--creme);
-  --hero-bg-picture: url("https://kcweddingassets.blob.core.windows.net/assets/HeaderBackground.jpg");
+  --hero-bg-picture: url("https://kcweddingassets.blob.core.windows.net/assets/KerenCarlHero.jpg");
   --hero-header-font: "Lora", serif;
 
   /* Navbar */
@@ -221,9 +221,9 @@ h1 {
   justify-content: center;
   display: flex;
   position: relative;
-  animation: scroll-hero auto linear;
+  animation: scroll-hero auto forwards;
   animation-timeline: --page-scroll;
-  animation-range: 0vh 300vh;
+  animation-range: 0vh 230vh;
 }
 
 .kc-zoom-header {
@@ -363,7 +363,7 @@ h1 {
   margin: 5% 5% 5% 5%;
   animation: appear-from-bottom 1s forwards;
   animation-timeline: --page-scroll;
-  animation-range: 200vh 350vh;
+  animation-range: 250vh 350vh;
 }
 
 .kc-rsvp-info h1 {
@@ -428,7 +428,7 @@ h1 {
   min-width: 400px;
   animation: appear-from-left 1s forwards;
   animation-timeline: --page-scroll;
-  animation-range: 200vh 305vh;
+  animation-range: 200vh 290vh;
 }
 
 .kc-rsvp-photo-carousel {
@@ -438,14 +438,14 @@ h1 {
   min-height: 400px;
   animation: appear-from-right 1s forwards;
   animation-timeline: --page-scroll;
-  animation-range: 200vh 305vh;
+  animation-range: 200vh 290vh;
 }
 
 .kc-rsvp-carousel-slide {
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-image: url("https://kcweddingassets.blob.core.windows.net/assets/About.jpg");
+  background-image: url("https://kcweddingassets.blob.core.windows.net/assets/About2.jpg");
   background-repeat: no-repeat;
 }
 
@@ -460,6 +460,9 @@ h1 {
 
 .kc-schedule-header {
   padding-left: 10%;
+  animation: appear-from-left 1s forwards;
+  animation-timeline: --page-scroll;
+  animation-range: 250vh 350vh;
 }
 
 .kc-schedule-row {
@@ -469,6 +472,9 @@ h1 {
   justify-content: center;
   margin-left: 30px;
   margin-right: 30px;
+  animation: appear-from-right 1s forwards;
+  animation-timeline: --page-scroll;
+  animation-range: 300vh 400vh;
 }
 
 .kc-schedule-info {
@@ -481,9 +487,6 @@ h1 {
   width: 100%;
   max-width: 300px;
   margin: 2% 1% 1% 0%;
-  animation: fade-in 1s forwards;
-  animation-timeline: --page-scroll;
-  animation-range: 250vh 500vh;
 }
 
 .kc-schedule-info-header {
@@ -527,7 +530,7 @@ h1 {
   margin-bottom: 30px;
   animation: fade-in 1s forwards;
   animation-timeline: --page-scroll;
-  animation-range: 420vh 500vh;
+  animation-range: 420vh 540vh;
 }
 
 .kc-location-info-text {
@@ -546,7 +549,7 @@ h1 {
   background-blend-mode: lighten;
   animation: appear-from-left 1s forwards;
   animation-timeline: --page-scroll;
-  animation-range: 400vh 500vh;
+  animation-range: 380vh 480vh;
 }
 
 .kc-hotel {
@@ -562,7 +565,7 @@ h1 {
   padding: 3% 3%;
   animation: appear-from-bottom 1s forwards;
   animation-timeline: --page-scroll;
-  animation-range: 450vh 550vh;
+  animation-range: 490vh 590vh;
 }
 
 .kc-hotel-header {
