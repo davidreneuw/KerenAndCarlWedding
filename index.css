@@ -173,7 +173,6 @@ h1 {
   width: 100vw;
   height: 150vh;
   background-color: #1c110a;
-  view-timeline: --hero-timeline block;
 }
 
 .kc-sticky-div {
@@ -223,8 +222,8 @@ h1 {
   display: flex;
   position: relative;
   animation: scroll-hero linear forwards;
-  animation-timeline: --hero-timeline;
-  animation-range: contain exit;
+  animation-timeline: --page-scroll;
+  animation-range: 0vh 50vh;
 }
 
 .kc-zoom-header {
@@ -365,7 +364,7 @@ h1 {
   view-timeline: --rsvp-info-timeline block;
   animation: appear-from-bottom 1s forwards;
   animation-timeline: --rsvp-info-timeline;
-  animation-range: entry contain 30%;
+  animation-range: entry;
 }
 
 .kc-rsvp-info h1 {
@@ -427,11 +426,11 @@ h1 {
 .kc-rsvp-text {
   width: 30%;
   padding: 5% 10%;
-  min-width: 400px;
+  min-width: 300px;
   animation: appear-from-left 1s forwards;
   view-timeline: --rsvp-text-timeline block;
   animation-timeline: --rsvp-text-timeline;
-  animation-range: entry contain 30%;
+  animation-range: entry;
 }
 
 .kc-rsvp-photo-carousel {
@@ -442,7 +441,7 @@ h1 {
   animation: appear-from-right 1s forwards;
   view-timeline: --rsvp-photo-carousel-timeline block;
   animation-timeline: --rsvp-photo-carousel-timeline;
-  animation-range: entry contain 30%;
+  animation-range: entry;
 }
 
 .kc-rsvp-carousel-slide {
@@ -467,7 +466,7 @@ h1 {
   animation: appear-from-left 1s forwards;
   view-timeline: --schedule-header-timeline block;
   animation-timeline: --schedule-header-timeline;
-  animation-range: entry contain 30%;
+  animation-range: entry;
 }
 
 .kc-schedule-row {
@@ -480,11 +479,11 @@ h1 {
 }
 
 .kc-schedule-info {
+  flex: 1;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   padding: 20px;
-  height: 450px;
   min-width: 200px;
   width: 100%;
   max-width: 300px;
@@ -492,7 +491,7 @@ h1 {
   animation: appear-from-bottom 1s forwards;
   view-timeline: --schedule-info-timeline block;
   animation-timeline: --schedule-info-timeline;
-  animation-range: entry contain 30%;
+  animation-range: entry;
 }
 
 .kc-schedule-info-header {
@@ -538,7 +537,7 @@ h1 {
   animation: fade-in 1s forwards;
   view-timeline: --location-info-timeline block;
   animation-timeline: --location-info-timeline;
-  animation-range: entry contain 30%;
+  animation-range: entry;
 }
 
 .kc-location-info-text {
@@ -575,7 +574,7 @@ h1 {
   animation: appear-from-bottom 1s forwards;
   view-timeline: --hotel-container-timeline block;
   animation-timeline: --hotel-container-timeline;
-  animation-range: entry contain 30%;
+  animation-range: entry;
 }
 
 .kc-hotel-header {
@@ -626,7 +625,7 @@ h1 {
   animation: appear-from-left 1s forwards;
   view-timeline: --us-hwm-header-timeline block;
   animation-timeline: --us-hwm-header-timeline;
-  animation-range: entry contain 30%;
+  animation-range: entry;
 }
 
 .kc-us-hwm-text {
@@ -636,14 +635,14 @@ h1 {
   animation: appear-from-left 1s forwards;
   view-timeline: --us-hwm-text-timeline block;
   animation-timeline: --us-hwm-text-timeline;
-  animation-range: entry contain 30%;
+  animation-range: entry;
 }
 
 .kc-us-tty-header {
   animation: appear-from-right 1s forwards;
   view-timeline: --us-tty-header-timeline block;
   animation-timeline: --us-tty-header-timeline;
-  animation-range: entry contain 30%;
+  animation-range: entry;
 }
 
 .kc-us-tty-text {
@@ -654,7 +653,7 @@ h1 {
   animation: appear-from-right 1s forwards;
   view-timeline: --us-tty-text-timeline block;
   animation-timeline: --us-tty-text-timeline;
-  animation-range: entry contain 30%;
+  animation-range: entry;
 }
 
 .kc-us-reel {
@@ -703,6 +702,7 @@ h1 {
 
 .kc-photos-terracotta-container {
   width: 90vw;
+  padding: 2% 2%;
   display: flex;
   flex-direction: column;
   animation: appear-from-right 1s forwards;
@@ -832,7 +832,7 @@ h1 {
   animation: appear-from-bottom 1s forwards;
   view-timeline: --qna-container-timeline block;
   animation-timeline: --qna-container-timeline;
-  animation-range: entry contain 30%;
+  animation-range: entry;
 }
 
 .kc-qna-header {
@@ -926,11 +926,19 @@ h1 {
 }
 
 @media screen and (max-width: 1350px) {
+  .kc-rsvp-text {
+    width: 60%;
+  }
+
   .kc-rsvp-photo-carousel {
     width: 50%;
     min-width: 100%;
     max-width: 100%;
     min-height: 400px;
+  }
+
+  .kc-photos-terracotta-container {
+    width: 100vw;
   }
 }
 
