@@ -221,14 +221,18 @@ h1 {
   justify-content: center;
   display: flex;
   position: relative;
-  animation: scroll-hero linear forwards;
-  animation-duration: 10s;
+  animation-name: scroll-hero;
+  animation-direction: forwards;
+  animation-timing-function: linear;
+  animation-duration: 99999s;
   animation-timeline: --page-scroll;
-  animation-range: 0vh 50vh;
+  animation-range: 0vh 300vh;
   -webkit-animation-name: scroll-hero;
-  -webkit-animation-duration: 10s;
+  -webkit-animation-direction: forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-duration: 99999s;
   -webkit-animation-timeline: --page-scroll;
-  -webkit-animation-range: 0vh 50vh;
+  -webkit-animation-range: 0vh 300vh;
 }
 
 .kc-zoom-header {
@@ -1001,19 +1005,13 @@ h1 {
     opacity: 1;
     transform: scale(1);
   }
-  25% {
-    transform: scale(1.5);
-  }
-  50% {
-    transform: scale(2);
-  }
-  75% {
-    transform: scale(2.5);
+  15% {
     opacity: 0;
+    transform: scale(5);
   }
   100% {
-    transform: scale(3);
     opacity: 0;
+    transform: scale(5);
   }
 }
 
