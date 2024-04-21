@@ -994,20 +994,20 @@ h1 {
 @keyframes scroll-hero {
   0% {
     opacity: 1;
-    width: 60vw;
+    transform: scale(1);
   }
   25% {
-    width: 260vw;
+    transform: scale(1.5);
   }
   50% {
-    width: 460vw;
+    transform: scale(2);
   }
   75% {
-    width: 660vw;
+    transform: scale(2.5);
     opacity: 0;
   }
   100% {
-    width: 860vw;
+    transform: scale(3);
     opacity: 0;
   }
 }
