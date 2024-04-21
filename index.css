@@ -173,6 +173,7 @@ h1 {
   width: 100vw;
   height: 150vh;
   background-color: #1c110a;
+  view-timeline: --hero-view-timeline block;
 }
 
 .kc-sticky-div {
@@ -222,17 +223,13 @@ h1 {
   display: flex;
   position: relative;
   animation-name: scroll-hero;
-  animation-direction: forwards;
-  animation-timing-function: linear;
   animation-duration: 99999s;
-  animation-timeline: --page-scroll;
-  animation-range: 0vh 300vh;
+  animation-timeline: --hero-view-timeline;
+  animation-range: contain exit;
   -webkit-animation-name: scroll-hero;
-  -webkit-animation-direction: forwards;
-  -webkit-animation-timing-function: linear;
   -webkit-animation-duration: 99999s;
-  -webkit-animation-timeline: --page-scroll;
-  -webkit-animation-range: 0vh 300vh;
+  -webkit-animation-timeline: --hero-view-timeline;
+  -webkit-animation-range: contain exit;
 }
 
 .kc-zoom-header {
@@ -1005,7 +1002,7 @@ h1 {
     opacity: 1;
     transform: scale(1);
   }
-  15% {
+  40% {
     opacity: 0;
     transform: scale(5);
   }
