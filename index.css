@@ -534,7 +534,9 @@ h1 {
 .kc-location-info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
   min-width: 40%;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -635,7 +637,6 @@ h1 {
 }
 
 .kc-us-hwm-text {
-  max-width: 800px;
   margin-top: 40px;
   margin-bottom: 40px;
   animation: appear-from-left 1s forwards;
@@ -693,7 +694,7 @@ h1 {
   animation: appear-from-right 1s forwards;
   view-timeline: --photos-creme-container-timeline block;
   animation-timeline: --photos-creme-container-timeline;
-  animation-range: entry contain 20%;
+  animation-range: entry 10% entry 50%;
 }
 
 .kc-photos-light-terracotta-container {
@@ -703,7 +704,7 @@ h1 {
   animation: appear-from-right 1s forwards;
   view-timeline: --photos-light-terracotta-container-timeline block;
   animation-timeline: --photos-light-terracotta-container-timeline;
-  animation-range: entry 10% contain 20%;
+  animation-range: entry 10% entry 50%;
 }
 
 .kc-photos-terracotta-container {
@@ -714,7 +715,7 @@ h1 {
   animation: appear-from-right 1s forwards;
   view-timeline: --photos-terracotta-container-timeline block;
   animation-timeline: --photos-terracotta-container-timeline;
-  animation-range: entry 20% contain 20%;
+  animation-range: entry 10% entry 50%;
 }
 
 .kc-photos-header {
@@ -725,6 +726,7 @@ h1 {
 
 .kc-photos-info {
   text-align: center;
+  padding: 20px;
 }
 
 .kc-photos-carrousel-wrapper {
@@ -889,7 +891,7 @@ h1 {
 }
 
 .kc-footer-info {
-  margin-left: 5%;
+  margin-left: auto;
 }
 
 @media screen and (max-width: 1170px) {
