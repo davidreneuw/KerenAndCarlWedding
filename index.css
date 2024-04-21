@@ -729,6 +729,19 @@ h1 {
   padding: 20px;
 }
 
+.kc-photos-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.kc-photos-col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .kc-photos-carrousel-wrapper {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -748,6 +761,18 @@ h1 {
   background-color: #000;
   width: 900px;
   height: 600px;
+}
+
+.kc-photos-floral-left {
+  margin-right: auto;
+  height: 750px;
+  object-fit: contain;
+}
+
+.kc-photos-floral-right {
+  margin-left: auto;
+  height: 750px;
+  object-fit: contain;
 }
 
 .kc-photos-carrousel-slide {
@@ -930,6 +955,14 @@ h1 {
     background-size: contain;
     padding-bottom: 0;
     cursor: pointer;
+  }
+
+  .kc-photos-floral-left {
+    display: none;
+  }
+
+  .kc-photos-floral-right {
+    display: none;
   }
 }
 
