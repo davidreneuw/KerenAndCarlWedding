@@ -626,7 +626,7 @@ h1 {
   flex-direction: row;
   padding-top: 20px;
   padding-bottom: 20px;
-  animation: move-left 90s linear infinite;
+  animation: move-left 80s linear infinite;
 }
 
 .kc-us-hwm-header {
@@ -1094,6 +1094,6 @@ h1 {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-850%);
+    transform: translateX(-525%);
   }
 }
