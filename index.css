@@ -370,7 +370,7 @@ h1 {
   view-timeline: --rsvp-info-timeline block;
   animation: appear-from-bottom 1s forwards;
   animation-timeline: --rsvp-info-timeline;
-  animation-range: entry -10%;
+  animation-range: entry -50%;
 }
 
 .kc-rsvp-info h1 {
@@ -436,7 +436,7 @@ h1 {
   animation: appear-from-left 1s forwards;
   view-timeline: --rsvp-text-timeline block;
   animation-timeline: --rsvp-text-timeline;
-  animation-range: entry -10%;
+  animation-range: entry -50%;
 }
 
 .kc-rsvp-photo-carousel {
@@ -447,7 +447,7 @@ h1 {
   animation: appear-from-right 1s forwards;
   view-timeline: --rsvp-photo-carousel-timeline block;
   animation-timeline: --rsvp-photo-carousel-timeline;
-  animation-range: entry -10%;
+  animation-range: entry -50%;
 }
 
 .kc-rsvp-carousel-slide {
@@ -472,7 +472,7 @@ h1 {
   animation: appear-from-left 1s forwards;
   view-timeline: --schedule-header-timeline block;
   animation-timeline: --schedule-header-timeline;
-  animation-range: entry -10%;
+  animation-range: entry -50%;
 }
 
 .kc-schedule-row {
@@ -497,7 +497,7 @@ h1 {
   animation: appear-from-bottom 1s forwards;
   view-timeline: --schedule-info-timeline block;
   animation-timeline: --schedule-info-timeline;
-  animation-range: entry -10%;
+  animation-range: entry -50%;
 }
 
 .kc-schedule-info-header {
@@ -528,7 +528,7 @@ h1 {
   animation: appear-from-right 1s forwards;
   view-timeline: --location-map-timeline block;
   animation-timeline: --location-map-timeline;
-  animation-range: entry -10%;
+  animation-range: entry -50%;
 }
 
 .kc-location-info {
@@ -545,7 +545,7 @@ h1 {
   animation: fade-in 1s forwards;
   view-timeline: --location-info-timeline block;
   animation-timeline: --location-info-timeline;
-  animation-range: entry -10%;
+  animation-range: entry -50%;
 }
 
 .kc-location-info-text {
@@ -565,7 +565,7 @@ h1 {
   animation: appear-from-left 1s forwards;
   view-timeline: --location-picture-timeline block;
   animation-timeline: --location-picture-timeline;
-  animation-range: entry -10%;
+  animation-range: entry -50%;
 }
 
 .kc-hotel {
@@ -582,7 +582,7 @@ h1 {
   animation: appear-from-bottom 1s forwards;
   view-timeline: --hotel-container-timeline block;
   animation-timeline: --hotel-container-timeline;
-  animation-range: entry -10%;
+  animation-range: entry -50%;
 }
 
 .kc-hotel-header {
@@ -633,7 +633,7 @@ h1 {
   animation: appear-from-left 1s forwards;
   view-timeline: --us-hwm-header-timeline block;
   animation-timeline: --us-hwm-header-timeline;
-  animation-range: entry -10%;
+  animation-range: entry -50%;
 }
 
 .kc-us-hwm-text {
@@ -642,14 +642,14 @@ h1 {
   animation: appear-from-left 1s forwards;
   view-timeline: --us-hwm-text-timeline block;
   animation-timeline: --us-hwm-text-timeline;
-  animation-range: entry -10%;
+  animation-range: entry -50%;
 }
 
 .kc-us-tty-header {
   animation: appear-from-right 1s forwards;
   view-timeline: --us-tty-header-timeline block;
   animation-timeline: --us-tty-header-timeline;
-  animation-range: entry -10%;
+  animation-range: entry -50%;
 }
 
 .kc-us-tty-text {
@@ -660,7 +660,7 @@ h1 {
   animation: appear-from-right 1s forwards;
   view-timeline: --us-tty-text-timeline block;
   animation-timeline: --us-tty-text-timeline;
-  animation-range: entry -10%;
+  animation-range: entry -50%;
 }
 
 .kc-us-reel {
@@ -694,7 +694,7 @@ h1 {
   animation: appear-from-right 1s forwards;
   view-timeline: --photos-creme-container-timeline block;
   animation-timeline: --photos-creme-container-timeline;
-  animation-range: entry -10% entry 50%;
+  animation-range: entry -50% entry 50%;
 }
 
 .kc-photos-light-terracotta-container {
@@ -704,7 +704,7 @@ h1 {
   animation: appear-from-right 1s forwards;
   view-timeline: --photos-light-terracotta-container-timeline block;
   animation-timeline: --photos-light-terracotta-container-timeline;
-  animation-range: entry -10% entry 50%;
+  animation-range: entry -50% entry 50%;
 }
 
 .kc-photos-terracotta-container {
@@ -715,7 +715,7 @@ h1 {
   animation: appear-from-right 1s forwards;
   view-timeline: --photos-terracotta-container-timeline block;
   animation-timeline: --photos-terracotta-container-timeline;
-  animation-range: entry -10% entry 50%;
+  animation-range: entry -50% entry 50%;
 }
 
 .kc-photos-header {
@@ -865,7 +865,7 @@ h1 {
   animation: appear-from-bottom 1s forwards;
   view-timeline: --qna-container-timeline block;
   animation-timeline: --qna-container-timeline;
-  animation-range: entry -10%;
+  animation-range: entry -50%;
 }
 
 .kc-qna-header {
