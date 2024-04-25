@@ -456,6 +456,7 @@ h1 {
   background-size: cover;
   background-image: url("https://kcweddingassets.blob.core.windows.net/assets/About2.jpg");
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .wrap {
@@ -920,6 +921,10 @@ h1 {
 }
 
 @media screen and (max-width: 1170px) {
+  .kc-us-reel-row {
+    animation: move-left-mobile 75s linear infinite;
+  }
+
   .kc-header-text {
     font-size: 25px;
     padding: 0 5px;
@@ -1095,5 +1100,14 @@ h1 {
   }
   100% {
     transform: translateX(-525%);
+  }
+}
+
+@keyframes move-left-mobile {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-3000%);
   }
 }
